@@ -21,7 +21,7 @@ def final_price(price, quantity, discount_pct, tax_pct):
       3. Aplicar el impuesto al resultado usando apply_tax.
       4. Retornar el resultado redondeado a 2 decimales usando round().
     """
-       subtotal = price * quantity
+    subtotal = price * quantity
     discount = apply_discount(subtotal, discount_pct)
     impuesto = apply_tax(discount, tax_pct)
     return round(impuesto, 2)
