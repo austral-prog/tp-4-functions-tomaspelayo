@@ -35,7 +35,7 @@ def vowel_percentage(text):
     """
     if total_letters(text) > 0:
         return round((count_vowels(text) / total_letters(text)) * 100, 1)
-    return None
+    return 0.0
 def analyze_text(text):
     """
     Retorna un string con el análisis completo del texto usando el siguiente formato:
